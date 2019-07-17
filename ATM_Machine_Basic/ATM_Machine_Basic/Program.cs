@@ -13,7 +13,9 @@ namespace ATM_Machine_Basic.Data
         {
             Saskaita Normanas = new Saskaita() { manoKortele = new Kortele() { KortelesNumeris = "45632155", kortelesTipas = KortelesTipas.MasterCard, CVV = "523" }, SaskaitosLikutis = 1000, Vardas = "KAROLINA", Amzius = 25, SaskaitosNumeris = "LT00012556824", Pavarde = "Kolyte", };
             Saskaita Marta = new Saskaita() { manoKortele = new Kortele(), SaskaitosLikutis = 1250, Vardas = "ANDZEJ" };
+
             Normanas.pavedimai.Add(new Tranzakcijos() { MokejimoPaskirtis = "Skola", Suma = 25, Valiuta = Valiutos.EUR, Laikas = DateTime.Now });
+
             VartotojoVartas(Normanas, Marta);
 
             Console.ReadLine();
